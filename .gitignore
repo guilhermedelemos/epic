@@ -27,3 +27,4 @@ build/
 out/
 .gradle/
 .idea/
+/.nb-gradle/
