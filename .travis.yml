@@ -2,3 +2,14 @@ language: java
 jdk:
   - oraclejdk8
   - oraclejdk9
+addons:
+  sonarcloud:
+    organization: "guilhermedelemos-github"
+script:
+  - ./gradlew sonarqube
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+    - '$HOME/.gradle'
+    - '.gradle'
